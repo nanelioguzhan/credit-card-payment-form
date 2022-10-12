@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
+  <script src="credit-card.js" defer></script>
+</head>
+<body>
+  <main>
+    <section class="background-image">
+      <aside>
+        <img id="background-img" src="images/bg-main-desktop.png" alt="background-for-desktop">
+      </aside>
+    </section>
+
+    <section class="card-front">
+      <div class="logos">
+        <img src="images/card-logo.svg" alt="">
+      </div>
+
+      <div class="displayed-number">
+        <span>0000 0000 0000 0000</span>
+      </div>
+
+      <div class="displayed-info">
+        <span class="displayed-name">Jonathan</span>
+        <div>
+          <span class="displayed-month">00</span>
+          <span>/</span>
+          <span class="displayed-year">00</span>
+        </div>
+      </div>
+      
+    </section>
+
+    <section class="card-back">
+      <span class="displayed-cvc">000</span>
+    </section>
+
+    <section class="form-wrapper">
+      <div class="form-div">
+        <form id="form">
+          <label for="name">CARDHOLDER NAME</label>
+          <input type="text" name="name" id="name" maxlength="25" placeholder="e.g. Jonathan Ferdinand" required>
+          <label for="card-number">CARD NUMBER</label>
+          <input type="text" name="card-number" id="card-number" autocomplete="cc-number" maxlength="16" minlength="16" placeholder="e.g. 1234 5678 9123 0000" required>
+          <div class="date-and-cvc">
+            <div class="datefield">
+                <label for="month">DATE</label>
+                <div class="date">
+                  <input type="text" name="month" id="month" maxlength="2" placeholder="MM" required>
+                  <input type="text" name="year" id="year" maxlength="2" placeholder="YY" required>
+                </div>
+            </div>
+            <div class="cvc-field">
+              <label for="cvc">CVC</label>
+              <div class="cvc">
+                 <input type="text" name="cvc" id="cvc" maxlength="3" minlength="3" placeholder="e.g. 123" required>
+              </div>
+            </div>
+          </div>
+       
+          <button id="submit" type="submit">Confirm</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>
